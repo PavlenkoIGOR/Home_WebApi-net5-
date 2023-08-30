@@ -1,7 +1,7 @@
 ﻿namespace HomeApi.Contracts.Models.Devices
 {
     /// <summary>
-    /// Запрос для обновления свойств подключенного устройства
+    /// Запрос для обновления свойств подключенного устройства 
     /// </summary>
     public class EditDeviceRequest
     {

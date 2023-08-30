@@ -44,10 +44,10 @@ namespace HomeApi.Controllers
             
             return StatusCode(200, resp);
         }
-
+         
         #region TODO: Задание: напишите запрос на удаление устройства
         /// <summary>
-        /// Удаление нового устройства
+        /// Удаление устройства
         /// </summary>
         [HttpDelete]
         [Route("")]

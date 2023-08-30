@@ -34,6 +34,7 @@ namespace HomeApi
             // регистрация сервиса репозитория для взаимодействия с базой данных
             services.AddSingleton<IDeviceRepository, DeviceRepository>();
             services.AddSingleton<IRoomRepository, RoomRepository>();
+            //services.AddSingleton<IHomeRpository, HomeRepository>();
             
             string connection = Configuration. GetConnectionString("DefaultConnection");
             services.AddDbContext<HomeApiContext>(options => options.UseSqlServer(connection), ServiceLifetime.Singleton);

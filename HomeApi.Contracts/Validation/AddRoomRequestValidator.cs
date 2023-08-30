@@ -10,10 +10,10 @@ namespace HomeApi.Contracts.Validation
     {
         public AddRoomRequestValidator() 
         {
-            RuleFor(x => x.Area).NotEmpty(); 
-            RuleFor(x => x.Name).NotEmpty();
-            RuleFor(x => x.Voltage).NotEmpty();
+            RuleFor(x => x.Name).NotEmpty(); 
+            RuleFor(x => x.Area).NotEmpty();
             RuleFor(x => x.GasConnected).NotEmpty();
+            RuleFor(x => x.Voltage).NotEmpty();
         }
     }
 }
