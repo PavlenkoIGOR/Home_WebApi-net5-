@@ -44,9 +44,29 @@ namespace HomeApi.Controllers
             
             return StatusCode(200, resp);
         }
-        
-        // TODO: Задание: напишите запрос на удаление устройства
-        
+
+        #region TODO: Задание: напишите запрос на удаление устройства
+        /// <summary>
+        /// Удаление нового устройства
+        /// </summary>
+        [HttpDelete]
+        [Route("")]
+        public async Task<IActionResult> DeleteDeviceByName(/*[FromBody]*/ string deviceName) //чтобы работало в POSTMAN надо раскомментировать [FromBody], а так можно вводить без кавычек в Swagger'e
+        {
+            
+            Device device = await _devices.GetDeviceByName(deviceName);
+           
+                if (device == null)
+                {
+                    return StatusCode(400, $"Устройств с именем \"{deviceName}\" не существует");
+                }
+
+            await _devices.DeleteDevice(device);
+
+            return StatusCode(201, $"Устройство {deviceName} было удалено");
+        }
+        #endregion
+
         /// <summary>
         /// Добавление нового устройства
         /// </summary>

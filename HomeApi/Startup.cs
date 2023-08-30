@@ -21,7 +21,7 @@ namespace HomeApi
         /// </summary>
         private IConfiguration Configuration { get; } = new ConfigurationBuilder()
             .AddJsonFile("appsettings.json")
-            .AddJsonFile("appsettings.Develpment.json")
+            .AddJsonFile("appsettings.Development.json")
             .AddJsonFile("HomeOptions.json")
             .Build();
 
