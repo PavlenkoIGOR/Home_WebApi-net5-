@@ -2,6 +2,8 @@
 
     <PropertyGroup>
         <TargetFramework>net5.0</TargetFramework>
+        <AssemblyName>HomeApi</AssemblyName>
+        <RootNamespace>HomeApi</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
@@ -17,7 +19,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\HomeApi.Contracts\HomeApi.Contracts.csproj" />
+      <ProjectReference Include="..\HomeApi.Contracts\HomeApiCore.Contracts.csproj" />
       <ProjectReference Include="..\HomeApi.Data\HomeApi.Data.csproj" />
     </ItemGroup>
 
