@@ -2,6 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>HomeApi.Contracts</AssemblyName>
+    <RootNamespace>HomeApi.Contracts</RootNamespace>
   </PropertyGroup>
 
 </Project>
